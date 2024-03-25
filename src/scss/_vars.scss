@@ -1,0 +1,17 @@
+:root {
+	// base
+	--font-family: "Montserrat", sans-serif;
+	--content-width: 1400px;
+	--container-offset: 20px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--white-color: #fff;
+	--black-color: #141b22;
+	// --grey-color: #a0a0a0;
+	// --body-bg-color: #eaeef6;
+	// --link-bg-color: #eeefff;
+	// --blue-color: #0f81ff;
+	// --light-blue-color: #008ed6;
+	// --dark-blue-color: #1c2a4d;
+}
