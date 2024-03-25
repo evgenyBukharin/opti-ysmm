@@ -1,2 +1,76 @@
 .header {
+	padding: 10px 0;
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		&-logo {
+			min-width: 250px;
+		}
+		&-buttons {
+			margin-left: auto;
+			display: flex;
+			gap: 16px;
+		}
+	}
+	&__button {
+		padding: 12px 24px 12px;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 600;
+		color: var(--white-color);
+		transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+		&-primary {
+			border: 1px solid var(--blue-color);
+			color: var(--blue-color);
+			&:hover {
+				background: var(--blue-color);
+				color: var(--white-color);
+			}
+		}
+		&-secondary {
+			background: var(--blue-color);
+			border: 1px solid var(--blue-color);
+			&:hover {
+				background: var(--black-color);
+				border: 1px solid var(--black-color);
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.header {
+		&__container {
+			&-logo {
+				min-width: 160px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.header {
+		&__container {
+			flex-wrap: wrap;
+			&-logo {
+				min-width: unset;
+			}
+		}
+		&__nav {
+			width: 100%;
+			order: 2;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.header {
+		&__container {
+			flex-direction: column;
+			&-buttons {
+				margin-left: unset;
+			}
+		}
+	}
 }
